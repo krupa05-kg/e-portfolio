@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio and blog of Krupa K G, IBM Professional Course student at Reva University (2025–2029). Aspiring Data Scientist and Software Developer.">
+    <meta name="keywords" content="Krupa K G, Reva University, IBM Professional Course, Data Science, Python, SQL, Software Developer, Portfolio, Blog">
+    <meta name="author" content="Krupa K G">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Krupa K G | Student & Aspiring Data Scientist">
+    <meta property="og:description" content="Explore my academic journey, projects, skills, and technical articles in data science and software development.">
+    <meta property="og:type" content="website">
+    
+    <title>Krupa K G | Personal Resume & Blog</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Background Elements -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    
+    <!-- Navigation Header -->
+    <header id="main-header" class="header-glass">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">&lt;</span>Krupa K G<span class="logo-accent">/&gt;</span>
+            </a>
+            
+            <nav id="nav-menu" class="nav-links">
+                <a href="#home" class="nav-link active" id="nav-item-home">Home</a>
+                <a href="#about" class="nav-link" id="nav-item-about">About</a>
+                <a href="#education-skills" class="nav-link" id="nav-item-edu-skills">Education & Skills</a>
+                <a href="#certifications" class="nav-link" id="nav-item-certs">Certifications</a>
+                <a href="#projects" class="nav-link" id="nav-item-projects">Projects</a>
+                <a href="#blog" class="nav-link" id="nav-item-blog">Blog</a>
+                <a href="#contact" class="nav-link" id="nav-item-contact">Contact</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun toggle-sun"></i>
+                    <i class="fas fa-moon toggle-moon"></i>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <button id="menu-toggle" class="menu-btn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero-section section-padding">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="badge hero-badge">Welcome to my space</span>
+                    <h1 class="hero-title">Hey, I'm <span class="gradient-text">Krupa K G</span></h1>
+                    <h2 class="hero-subtitle">
+                        <span id="typing-text">IBM Professional Course Student</span>
+                    </h2>
+                    <p class="hero-description">
+                        Aspiring Data Scientist & Software Developer studying at Reva University. Passionate about drawing insights from data and engineering efficient software solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+                            <span>View Projects</span> <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#blog" class="btn btn-secondary" id="hero-btn-blog">
+                            <span>Read Blog</span> <i class="fas fa-book-open"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-card-wrapper">
+                        <div class="profile-card">
+                            <div class="profile-img-container">
+                                <!-- Modern profile SVG illustration representing tech/development -->
+                                <svg id="profile-illustration" class="profile-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="svg-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="var(--accent-primary)" />
+                                            <stop offset="100%" stop-color="var(--accent-secondary)" />
+                                        </linearGradient>
+                                        <linearGradient id="svg-grad-2" x1="100%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" stop-color="var(--accent-tertiary)" />
+                                            <stop offset="100%" stop-color="var(--accent-primary)" />
+                                        </linearGradient>
+                                        <filter id="svg-glow">
+                                            <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+                                            <feMerge>
+                                                <feMergeNode in="coloredBlur"/>
+                                                <feMergeNode in="SourceGraphic"/>
+                                            </feMerge>
+                                        </filter>
+                                    </defs>
+                                    <!-- Background grid of dots -->
+                                    <pattern id="dot-grid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                        <circle cx="2" cy="2" r="1.5" fill="var(--text-muted)" opacity="0.15" />
+                                    </pattern>
+                                    <rect width="400" height="400" rx="30" fill="var(--card-bg)" />
+                                    <rect width="400" height="400" rx="30" fill="url(#dot-grid)" />
+                                    
+                                    <!-- Glowing abstract shapes representing tech -->
+                                    <circle cx="200" cy="200" r="110" fill="none" stroke="url(#svg-grad-1)" stroke-width="4" stroke-dasharray="10 5" filter="url(#svg-glow)">
+                                        <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="20s" repeatCount="indefinite" />
+                                    </circle>
+                                    <circle cx="200" cy="200" r="90" fill="none" stroke="url(#svg-grad-2)" stroke-width="2" stroke-dasharray="5 15">
+                                        <animateTransform attributeName="transform" type="rotate" from="360 200 200" to="0 200 200" dur="15s" repeatCount="indefinite" />
+                                    </circle>
+                                    
+                                    <!-- Inner code design elements -->
+                                    <g transform="translate(145, 145)">
+                                        <rect width="110" height="110" rx="20" fill="var(--bg-primary)" opacity="0.8" />
+                                        <!-- Code symbols -->
+                                        <path d="M 30 45 L 20 55 L 30 65" stroke="var(--accent-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M 80 45 L 90 55 L 80 65" stroke="var(--accent-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M 60 35 L 50 75" stroke="var(--accent-secondary)" stroke-width="3" stroke-linecap="round" />
+                                        <!-- SQL representation -->
+                                        <text x="55" y="92" fill="var(--text-primary)" font-family="'Outfit', sans-serif" font-size="12" font-weight="600" text-anchor="middle" letter-spacing="2">DATA</text>
+                                    </g>
+                                    
+                                    <!-- Decorative nodes -->
+                                    <circle cx="200" cy="90" r="6" fill="var(--accent-secondary)" filter="url(#svg-glow)"/>
+                                    <circle cx="90" cy="200" r="6" fill="var(--accent-primary)" filter="url(#svg-glow)"/>
+                                    <circle cx="310" cy="200" r="6" fill="var(--accent-tertiary)" filter="url(#svg-glow)"/>
+                                    <circle cx="200" cy="310" r="6" fill="var(--accent-primary)" filter="url(#svg-glow)"/>
+                                </svg>
+                                <div class="profile-fallback-avatar">
+                                    <i class="fas fa-user-astronaut"></i>
+                                </div>
+                            </div>
+                            <!-- Live status badge -->
+                            <div class="profile-status">
+                                <span class="pulse-dot"></span>
+                                <span class="status-text">Learning SQL & Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll to About Section">
+                    <span class="mouse-icon">
+                        <span class="wheel"></span>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section section-padding reveal-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="badge section-badge">Who I Am</span>
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text-column">
+                        <p class="about-lead">
+                            I am a highly motivated student currently pursuing an **IBM Professional Course** at **Reva University** (Batch of 2025–2029).
+                        </p>
+                        <p class="about-body">
+                            My fascination with technology drives my continuous pursuit of knowledge. I am building a strong foundation in programming, software development, and modern data science. The combination of university coursework and IBM professional resources allows me to bridge the gap between academic theory and practical software engineering.
+                        </p>
+                        <p class="about-body">
+                            I enjoy problem-solving and believe in using clean, robust logic to build smart applications. Whether designing datasets with SQL, building automation tools in Python, or learning the mechanics of machine learning, I strive for coding excellence and user-friendly products.
+                        </p>
+                        <div class="about-attributes">
+                            <div class="attribute-item">
+                                <div class="attribute-icon"><i class="fas fa-university"></i></div>
+                                <div class="attribute-details">
+                                    <h4>Reva University</h4>
+                                    <p>Pursuing Degree (2025–2029)</p>
+                                </div>
+                            </div>
+                            <div class="attribute-item">
+                                <div class="attribute-icon"><i class="fas fa-graduation-cap"></i></div>
+                                <div class="attribute-details">
+                                    <h4>IBM Professional</h4>
+                                    <p>Industry-aligned Training</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-cards-column">
+                        <div class="about-card glass-card">
+                            <div class="about-card-icon grad-bg-1"><i class="fas fa-laptop-code"></i></div>
+                            <h3>Technology & Coding</h3>
+                            <p>Writing neat scripts, automating tasks, and exploring algorithms. Focus on Python and standard software engineering paradigms.</p>
+                        </div>
+                        <div class="about-card glass-card">
+                            <div class="about-card-icon grad-bg-2"><i class="fas fa-chart-pie"></i></div>
+                            <h3>Data Science & Analytics</h3>
+                            <p>Analyzing datasets, building structures using SQL, and turning raw inputs into meaningful visual intelligence.</p>
+                        </div>
+                        <div class="about-card glass-card">
+                            <div class="about-card-icon grad-bg-3"><i class="fas fa-lightbulb"></i></div>
+                            <h3>Continuous Learning</h3>
+                            <p>Eager to tackle new packages, technologies, frameworks, and tools. Adaptability is my primary skill.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Skills Section -->
+        <section id="education-skills" class="edu-skills-section section-padding reveal-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="badge section-badge">Background & Capabilities</span>
+                    <h2 class="section-title">Education & <span class="gradient-text">Skills</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="edu-skills-layout">
+                    <!-- Education Column (Timeline) -->
+                    <div class="edu-column">
+                        <h3 class="subsection-title"><i class="fas fa-book-reader icon-accent"></i> My Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-card glass-card">
+                                    <div class="timeline-meta">
+                                        <span class="timeline-date">2025 – 2029</span>
+                                        <span class="timeline-badge">In Progress</span>
+                                    </div>
+                                    <h4 class="timeline-title">IBM Professional Course</h4>
+                                    <h5 class="timeline-org">Reva University</h5>
+                                    <p class="timeline-desc">
+                                        An intensive curriculum combining standard computer science education with IBM's professional developer modules. Deep dive into modern architectures, cloud principles, cognitive solutions, software analysis, and applied statistics.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skills Column (Progress bars) -->
+                    <div class="skills-column">
+                        <h3 class="subsection-title"><i class="fas fa-tools icon-accent"></i> Technical & Core Skills</h3>
+                        <div class="skills-wrapper glass-card">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage" id="skill-val-python">85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-python" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL (Database Management)</span>
+                                    <span class="skill-percentage" id="skill-val-sql">80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-sql" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Programming Fundamentals</span>
+                                    <span class="skill-percentage" id="skill-val-programming">85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-programming" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Data Science Essentials</span>
+                                    <span class="skill-percentage" id="skill-val-datascience">75%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-datascience" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Problem Solving</span>
+                                    <span class="skill-percentage" id="skill-val-solving">85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-solving" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Communication Skills</span>
+                                    <span class="skill-percentage" id="skill-val-comm">90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-comm" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Teamwork & Collaboration</span>
+                                    <span class="skill-percentage" id="skill-val-team">90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-team" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certs-section section-padding reveal-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="badge section-badge">Credentials</span>
+                    <h2 class="section-title">Certifications & <span class="gradient-text">Badges</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="certs-grid">
+                    <!-- IBM Core Certification -->
+                    <div class="cert-card glass-card">
+                        <div class="cert-header">
+                            <div class="cert-badge-logo">
+                                <i class="fab fa-ibm"></i>
+                            </div>
+                            <span class="cert-tag cert-active">Verified</span>
+                        </div>
+                        <h3 class="cert-title">IBM Professional Course Certification</h3>
+                        <p class="cert-org">Issued by Reva University in collab with IBM</p>
+                        <p class="cert-desc">Comprehensive certification focusing on practical engineering paradigms, hands-on labs, database management, and Python programming modules.</p>
+                        <div class="cert-footer">
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Pursued 2025–2029</span>
+                            <span class="cert-verify-link"><i class="fas fa-check-circle"></i> Curriculum Integrated</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Future Cert Placeholder 1 -->
+                    <div class="cert-card glass-card cert-placeholder">
+                        <div class="cert-header">
+                            <div class="cert-badge-logo">
+                                <i class="fas fa-hourglass-start"></i>
+                            </div>
+                            <span class="cert-tag cert-incoming">Incoming</span>
+                        </div>
+                        <h3 class="cert-title">IBM Data Science Professional</h3>
+                        <p class="cert-org">Coursera / IBM Professional Credentials</p>
+                        <p class="cert-desc">Planned curriculum module including advanced data visualization, machine learning models, and complex python pipelines.</p>
+                        <div class="cert-footer">
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Planned: 2026/2027</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Future Cert Placeholder 2 -->
+                    <div class="cert-card glass-card cert-placeholder">
+                        <div class="cert-header">
+                            <div class="cert-badge-logo">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span class="cert-tag cert-incoming">Incoming</span>
+                        </div>
+                        <h3 class="cert-title">SQL Developer & Database Associate</h3>
+                        <p class="cert-org">IBM/Relational Database Certificates</p>
+                        <p class="cert-desc">Advanced data storage modeling, nested subqueries, procedures, query optimization techniques, and schema layout designs.</p>
+                        <div class="cert-footer">
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Planned: 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding reveal-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="badge section-badge">My Work</span>
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <!-- Project Category Filters -->
+                <div class="project-filters" id="project-filter-buttons">
+                    <button class="filter-btn active" data-filter="all" id="btn-filter-all">All Projects</button>
+                    <button class="filter-btn" data-filter="python" id="btn-filter-python">Python</button>
+                    <button class="filter-btn" data-filter="sql" id="btn-filter-sql">SQL</button>
+                    <button class="filter-btn" data-filter="upcoming" id="btn-filter-upcoming">Academic (Planned)</button>
+                </div>
+                
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid-container">
+                    <!-- Project 1 (Python) -->
+                    <div class="project-card glass-card" data-category="python">
+                        <div class="project-thumbnail grad-bg-1">
+                            <i class="fab fa-python project-thumb-icon"></i>
+                            <span class="project-badge">Active Dev</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-card-title">Student Academic Progress Tracker</h3>
+                            <p class="project-card-desc">A Python command-line and GUI application that enables university students to input grades, generate performance reports, and plot progress timelines using Matplotlib.</p>
+                            <div class="project-tech-stack">
+                                <span>Python</span>
+                                <span>Matplotlib</span>
+                                <span>JSON Storage</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/krupa05-kg" target="_blank" rel="noopener" class="project-link-btn" id="project-link-tracker">
+                                    <i class="fab fa-github"></i> GitHub Code
+                                </a>
+                                <span class="project-link-btn disabled-link"><i class="fas fa-external-link-alt"></i> Live Demo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 (SQL) -->
+                    <div class="project-card glass-card" data-category="sql">
+                        <div class="project-thumbnail grad-bg-2">
+                            <i class="fas fa-database project-thumb-icon"></i>
+                            <span class="project-badge">Design Phase</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-card-title">University Database Schema Designer</h3>
+                            <p class="project-card-desc">An optimized relational database structure designed in PostgreSQL/MySQL. Handles courses, student enrollments, exam records, and department allocations, generating query analysis tables.</p>
+                            <div class="project-tech-stack">
+                                <span>SQL</span>
+                                <span>PostgreSQL</span>
+                                <span>ER Diagramming</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/krupa05-kg" target="_blank" rel="noopener" class="project-link-btn" id="project-link-db">
+                                    <i class="fab fa-github"></i> GitHub Code
+                                </a>
+                                <span class="project-link-btn disabled-link"><i class="fas fa-external-link-alt"></i> Live Demo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 (Upcoming Data Science) -->
+                    <div class="project-card glass-card" data-category="upcoming">
+                        <div class="project-thumbnail grad-bg-3">
+                            <i class="fas fa-brain project-thumb-icon"></i>
+                            <span class="project-badge">Upcoming</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-card-title">Cognitive Crop Prediction System</h3>
+                            <p class="project-card-desc">A planned data-driven project to train classification models on soil mineral, moisture, and temperature indicators to recommend the highest yield crop choices.</p>
+                            <div class="project-tech-stack">
+                                <span>Python</span>
+                                <span>Scikit-Learn</span>
+                                <span>Pandas</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="project-link-btn disabled-link"><i class="fab fa-github"></i> GitHub Code</span>
+                                <span class="project-link-btn disabled-link"><i class="fas fa-external-link-alt"></i> Live Demo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section section-padding reveal-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="badge section-badge">Writing</span>
+                    <h2 class="section-title">My Technical <span class="gradient-text">Blog</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <!-- Blog Search & Filter Container -->
+                <div class="blog-controls">
+                    <div class="blog-search-bar">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="blog-search-input" placeholder="Search articles by title, content, or tags...">
+                    </div>
+                    <div class="blog-tags" id="blog-tag-filters">
+                        <!-- Filled dynamically by JS -->
+                    </div>
+                </div>
+                
+                <!-- Blog Grid -->
+                <div class="blog-grid" id="blog-posts-container">
+                    <!-- Dynamically populated by script.js -->
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i> Loading Blog Posts...
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Goals & Languages Section -->
+        <section id="goals-languages" class="goals-languages-section section-padding reveal-section">
+            <div class="section-container">
+                <div class="goals-lang-grid">
+                    <!-- Languages Box -->
+                    <div class="languages-box glass-card">
+                        <h3 class="box-title"><i class="fas fa-language icon-accent"></i> Languages Known</h3>
+                        <div class="lang-list">
+                            <div class="lang-item">
+                                <div class="lang-name-row">
+                                    <span class="lang-name">Kannada</span>
+                                    <span class="lang-level">Native</span>
+                                </div>
+                                <div class="lang-progress">
+                                    <div class="lang-progress-bar" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="lang-item">
+                                <div class="lang-name-row">
+                                    <span class="lang-name">English</span>
+                                    <span class="lang-level">Fluent / Professional</span>
+                                </div>
+                                <div class="lang-progress">
+                                    <div class="lang-progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Career Goals Box -->
+                    <div class="goals-box glass-card">
+                        <h3 class="box-title"><i class="fas fa-bullseye icon-accent"></i> Career Aspirations</h3>
+                        <p class="goals-desc">
+                            My roadmap is designed around developing robust competencies in software engineering and intelligence systems.
+                        </p>
+                        <ul class="goals-list">
+                            <li>
+                                <div class="goal-bullet"><i class="fas fa-chevron-right"></i></div>
+                                <div class="goal-text"><strong>Short-term:</strong> Deepen understanding of algorithmic analysis and design structures using SQL databases, and secure technical certificates in software deployment.</div>
+                            </li>
+                            <li>
+                                <div class="goal-bullet"><i class="fas fa-chevron-right"></i></div>
+                                <div class="goal-text"><strong>Medium-term:</strong> Contribute to open-source python packages and academic initiatives analyzing health or environment indices with predictive modeling tools.</div>
+                            </li>
+                            <li>
+                                <div class="goal-bullet"><i class="fas fa-chevron-right"></i></div>
+                                <div class="goal-text"><strong>Long-term:</strong> Establish a leadership engineering role in software architecture and artificial intelligence, coding solutions that improve standard quality-of-life parameters.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Download CTA Section -->
+        <section class="resume-cta-section section-padding reveal-section">
+            <div class="section-container">
+                <div class="resume-cta-card glass-card grad-bg-3">
+                    <div class="resume-cta-content">
+                        <h3>Interested in working together?</h3>
+                        <p>Download my comprehensive academic profile summary, including detailed lists of skills, certifications, and academic marks.</p>
+                    </div>
+                    <div class="resume-cta-action">
+                        <!-- Interactive button with trigger id -->
+                        <button id="resume-download-btn" class="btn btn-primary btn-large">
+                            <i class="fas fa-file-download"></i> <span>Download Resume (PDF)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding reveal-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="badge section-badge">Get In Touch</span>
+                    <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="contact-layout">
+                    <!-- Contact Information Card -->
+                    <div class="contact-info-card glass-card">
+                        <h3>Let's Connect</h3>
+                        <p>Feel free to reach out to discuss collaborative opportunities, university tech projects, or general software questions.</p>
+                        
+                        <div class="contact-details-list">
+                            <a href="mailto:krupa05@email.com" class="contact-info-item" id="contact-link-email">
+                                <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="contact-info-text">
+                                    <span class="info-label">Email</span>
+                                    <span class="info-val">krupa05@email.com</span>
+                                </div>
+                            </a>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon"><i class="fas fa-phone-alt"></i></div>
+                                <div class="contact-info-text">
+                                    <span class="info-label">Phone</span>
+                                    <span class="info-val">+91 [Placeholder Phone]</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="contact-info-text">
+                                    <span class="info-label">Location</span>
+                                    <span class="info-val">Bengaluru, Karnataka, India</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-socials">
+                            <a href="https://github.com/krupa05-kg" target="_blank" rel="noopener" class="social-icon-btn" aria-label="GitHub" id="contact-social-github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn" id="contact-social-linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card glass-card">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Your Name</label>
+                                    <input type="text" id="form-name" required placeholder="John Doe">
+                                    <span class="form-error-msg" id="name-error">Please enter your name</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Your Email</label>
+                                    <input type="email" id="form-email" required placeholder="john@example.com">
+                                    <span class="form-error-msg" id="email-error">Please enter a valid email address</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                    <input type="text" id="form-subject" required placeholder="Collaboration Inquiry">
+                                    <span class="form-error-msg" id="subject-error">Please enter a subject</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" required rows="5" placeholder="Write your message here..."></textarea>
+                                <span class="form-error-msg" id="message-error">Please write a message</span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full" id="contact-submit-btn">
+                                <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-accent">&lt;</span>Krupa K G<span class="logo-accent">/&gt;</span>
+                </a>
+                <p>IBM Professional Course Student at Reva University (2025–2029)</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <div class="footer-nav-grid">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#education-skills">Education & Skills</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            
+            <div class="footer-socials">
+                <h4>Follow Me</h4>
+                <div class="social-row">
+                    <a href="https://github.com/krupa05-kg" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Krupa K G. All Rights Reserved. Crafted with <i class="fas fa-heart text-accent"></i> and Vanilla JS.</p>
+        </div>
+    </footer>
+
+    <!-- Dynamic Blog Reader Modal -->
+    <div id="blog-reader-modal" class="modal-overlay">
+        <div class="modal-container glass-card">
+            <button id="modal-close-btn" class="modal-close-btn" aria-label="Close Article">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content-wrapper" id="modal-body-content">
+                <!-- Injected dynamically by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast-notification" class="toast-wrapper">
+        <div class="toast-content glass-card">
+            <div class="toast-icon"><i class="fas fa-check-circle"></i></div>
+            <div class="toast-message" id="toast-text-msg">Message sent successfully!</div>
+        </div>
+    </div>
+
+    <!-- Script file -->
+    <script src="script.js"></script>
+</body>
+</html>
